@@ -22,7 +22,7 @@ warn 'too many: ' + too_many.inspect
 not_enough = tags_count.select{|_, v| v == 1 }
 warn 'not enough: ' + not_enough.inspect
 
-ignore = (too_many.keys + not_enough.keys).sort!.uniq!
+ignore = (too_many.keys + not_enough.keys).sort.uniq
 # ignore = []
 
 graph.select!{|t1, t2| !ignore.include?(t1) && !ignore.include?(t2) }
