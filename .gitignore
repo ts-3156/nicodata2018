@@ -1,4 +1,6 @@
 *.csv
 *.jsonl
 *.zip
+/.idea
+.DS_Store
 
